@@ -634,7 +634,8 @@ def main():
                                     l.switch = False
                         # safe answer
                         if safe_button1.click and safe_button5.click and safe_button7.click and safe_button8.click and \
-                                safe_button9.click:
+                                safe_button9.click and not safe_button2.click and not safe_button3.click and \
+                                not safe_button4.click and not safe_button6.click:
                             # open safe
                             safe.lock = False
                             # remove buttons
